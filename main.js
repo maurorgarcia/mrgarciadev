@@ -33,19 +33,26 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Navbar Background & Progress Bar on Scroll
+    // Navbar Background, Smart Hide & Progress Bar on Scroll
     const navbar = document.getElementById('navbar');
     const progressBar = document.getElementById('scroll-progress');
+    let lastScrollY = window.scrollY;
     
     window.addEventListener('scroll', () => {
-        // Navbar logic
+        // Transparent to Solid Navbar
         if (window.scrollY > 50) {
-            navbar.style.background = 'rgba(0, 0, 0, 0.8)';
-            navbar.style.borderBottom = '1px solid rgba(255, 255, 255, 0.1)';
+            navbar.classList.add('scrolled');
         } else {
-            navbar.style.background = 'transparent';
-            navbar.style.borderBottom = '1px solid transparent';
+            navbar.classList.remove('scrolled');
         }
+        
+        // Smart Hide Navbar (scroll down hides, scroll up shows)
+        if (window.scrollY > lastScrollY && window.scrollY > 150) {
+            navbar.classList.add('hidden-nav');
+        } else {
+            navbar.classList.remove('hidden-nav');
+        }
+        lastScrollY = window.scrollY;
         
         // Progress Bar logic
         const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
@@ -133,4 +140,22 @@ document.addEventListener('DOMContentLoaded', () => {
             cursorGlow.style.transform = `translate(-50%, -50%)`;
         });
     }
+
+    // Magnetic Buttons Effect
+    const magneticBtns = document.querySelectorAll('.btn');
+    magneticBtns.forEach(btn => {
+        btn.addEventListener('mousemove', function(e) {
+            const rect = this.getBoundingClientRect();
+            const x = e.clientX - rect.left - rect.width / 2;
+            const y = e.clientY - rect.top - rect.height / 2;
+            
+            this.style.transition = 'none'; // Snappy tracking
+            this.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px)`;
+        });
+        
+        btn.addEventListener('mouseleave', function() {
+            this.style.transition = 'transform 0.5s cubic-bezier(0.16, 1, 0.3, 1)';
+            this.style.transform = `translate(0px, 0px)`;
+        });
+    });
 });

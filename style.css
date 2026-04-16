@@ -146,6 +146,7 @@ body::after {
     backdrop-filter: blur(12px); border-bottom: 1px solid transparent; transition: var(--transition);
 }
 .navbar.scrolled { border-bottom: 1px solid var(--bg-card-border); background: rgba(5,5,5,0.85); padding: 0.8rem 0; }
+.navbar.hidden-nav { transform: translateY(-100%); }
 .nav-container { display: flex; justify-content: space-between; align-items: center; }
 .logo { font-size: 1.2rem; font-weight: 700; color: #fff; text-decoration: none; letter-spacing: -0.05em; }
 .nav-links { display: flex; align-items: center; gap: 2rem; }
