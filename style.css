@@ -172,7 +172,8 @@ body::after {
 .btn-outline:hover { background: #fff; color: #000; }
 
 /* Skills */
-.tech-stack { margin-top: 3rem; }
+.tech-stack { margin-top: 3rem; display: flex; flex-direction: column; gap: 1.5rem; }
+.skills-group h4 { font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.75rem; font-weight: 700; }
 .skills-grid { display: flex; flex-wrap: wrap; gap: 0.75rem; }
 .skill-tag {
     background: var(--bg-card);
