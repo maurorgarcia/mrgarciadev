@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mauro García - Full Stack Developer & Automation Engineer">
+    <meta name="description" content="Mauro Raúl García - Full Stack Developer">
     <title>Mauro Raúl García | Full Stack Developer</title>
     
     <!-- Google Fonts: Inter -->
@@ -15,32 +15,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Decorative Background -->
+    <!-- Abstract Premium Background -->
     <div class="mesh-gradient"></div>
 
-    <!-- Scroll Progress Bar -->
+    <!-- Scroll Progress -->
     <div class="scroll-progress" id="scroll-progress"></div>
 
     <!-- Navigation -->
-    <nav class="navbar" id="navbar">
+    <header class="navbar" id="navbar">
         <div class="container nav-container">
-            <a href="#home" class="logo">MG.</a>
-            <div class="nav-links">
-                <a href="#about" class="nav-link">Experiencia</a>
+            <a href="#hero" class="logo">MG.</a>
+            <nav class="nav-links">
+                <a href="#about" class="nav-link">Sobre Mí</a>
+                <a href="#experience" class="nav-link">Experiencia</a>
                 <a href="#projects" class="nav-link">Proyectos</a>
-                <a href="cv-mauro-garcia.pdf" class="nav-link" target="_blank" download>⬇ CV</a>
-                <a href="#contact" class="btn btn-outline">Contacto</a>
-            </div>
+                <a href="#contact" class="btn btn-outline btn-sm">Contacto</a>
+            </nav>
             <button class="mobile-menu-btn" aria-label="Abrir menú">
                 <span></span><span></span><span></span>
             </button>
         </div>
-    </nav>
+    </header>
 
     <main>
         <!-- Hero Section -->
-        <section id="home" class="hero section reveal">
-            <div class="hero-glow"></div>
+        <section id="hero" class="hero section">
             <div class="container">
                 <div class="hero-content reveal">
                     <div class="status-badge">
@@ -49,7 +48,7 @@
                     </div>
                     <h1 class="hero-title">
                         Mauro Raúl García <br>
-                        <span class="text-accent">Full Stack Developer.</span>
+                        <span class="text-accent gradient-text">Full Stack Developer.</span>
                     </h1>
                     <p class="hero-description">
                         Especializado en la creación de interfaces modernas, dinámicas y centradas en la experiencia del usuario. Experto en React, Node.js y .NET, enfocado en escribir código limpio y orientado a la resolución de problemas.
@@ -63,208 +62,234 @@
             </div>
         </section>
 
-        <!-- Experience & About Section -->
-        <section id="about" class="about section">
-            <div class="container grid-2-col">
-                <div class="about-text reveal">
-                    <h2 class="section-title">Perfil Técnico</h2>
-                    <p class="text-body">
-                        Desarrollador Full Stack con enfoque en la eficiencia técnica y el rigor corporativo. Mi perfil se distingue por concebir el software no solo como líneas de código, sino como el motor estratégico para reducir costos operativos, maximizar la trazabilidad y escalar modelos de negocio a nivel industrial.
-                    </p>
-                    <div class="tech-stack">
-                        <div class="skills-group reveal">
-                            <h4>Lenguajes & Tecnologías</h4>
-                            <div class="skills-grid">
-                                <span class="skill-tag">JavaScript / C# / SQL</span>
-                                <span class="skill-tag">HTML5 / CSS3 Moderno</span>
-                            </div>
+        <!-- Professional Resume Structure: Experience & Education -->
+        <section id="experience" class="resume-section section">
+            <div class="container">
+                <div class="resume-grid">
+                    <!-- Column 1: Experience -->
+                    <div class="resume-column reveal">
+                        <div class="section-header">
+                            <span class="eyebrow">Trayectoria</span>
+                            <h2 class="section-title">Experiencia Laboral</h2>
                         </div>
-                        
-                        <div class="skills-group reveal">
-                            <h4>Desarrollo Frontend</h4>
-                            <div class="skills-grid">
-                                <span class="skill-tag">React.js / Next.js</span>
-                                <span class="skill-tag">Diseño UI/UX / Responsive</span>
-                            </div>
-                        </div>
-
-                        <div class="skills-group reveal">
-                            <h4>Arquitectura Backend</h4>
-                            <div class="skills-grid">
-                                <span class="skill-tag">Node.js / Express</span>
-                                <span class="skill-tag">ASP.NET Core / Entity Framework</span>
-                                <span class="skill-tag">APIs RESTful / JWT</span>
-                            </div>
-                        </div>
-
-                        <div class="skills-group reveal">
-                            <h4>Infraestructura & Datos</h4>
-                            <div class="skills-grid">
-                                <span class="skill-tag">SQL Server / Supabase</span>
-                                <span class="skill-tag">Modelado & Consultas Complejas</span>
-                            </div>
-                        </div>
-
-                        <div class="skills-group reveal">
-                            <h4>Herramientas & Otros</h4>
-                            <div class="skills-grid">
-                                <span class="skill-tag">Git / Postman / Scrum</span>
-                                <span class="skill-tag">Cookies & Session Management</span>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <span class="timeline-date">Marzo 2025 — Actualidad</span>
+                                <h3 class="timeline-role">Administración - Recursos Humanos</h3>
+                                <h4 class="timeline-company">SJG MONTAJES INDUSTRIALES SRL</h4>
+                                <p class="timeline-desc">Gestión de horas y control de asistencia in-situ. Mejora de la precisión en registros mediante controles más claros y desarrollo de reportes internos analíticos para optimizar procesos disciplinarios y administrativos.</p>
                             </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="experience-timeline reveal">
-                    <h2 class="section-title">Experiencia</h2>
-                    
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <span class="timeline-date">Feb 2026 — Presente</span>
-                            <h3 class="timeline-role">Co-Founder & Technical Lead</h3>
-                            <h4 class="timeline-company">Go Dream AI</h4>
-                            <p>Estudio de arquitectura operacional organizacional. Lidero el diseño y desarrollo de sistemas automatizados enfocados en eliminar la fricción operativa, reducir el error humano y construir infraestructura Full Stack escalable (Web Apps, APIs y Bases de Datos).</p>
+
+                    <!-- Column 2: Education -->
+                    <div class="resume-column reveal">
+                        <div class="section-header">
+                            <span class="eyebrow">Educación</span>
+                            <h2 class="section-title">Formación Académica</h2>
+                        </div>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <span class="timeline-date">2025 — Actualmente</span>
+                                <h3 class="timeline-role">Diplomatura Full Stack Web Development</h3>
+                                <h4 class="timeline-company">Coderhouse</h4>
+                                <p class="timeline-desc">Desarrollo end-to-end con React, Next.js, Node.js y C#. Implementación de APIs REST, autenticación (JWT) y manejo de estados en proyectos colaborativos bajo metodologías ágiles.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-date">2023 — 2025</span>
+                                <h3 class="timeline-role">Tecnicatura Universitaria en Programación</h3>
+                                <h4 class="timeline-company">Universidad Tecnológica Nacional</h4>
+                                <p class="timeline-desc">Formación académica en fundamentos de algoritmos, estructuras de datos y lógica. Desarrollo sólido con C# y .NET Core, modelado de bases de datos relacionales y arquitectura de computadoras.</p>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <span class="timeline-date">Marzo 2025 — Actualidad</span>
-                            <h3 class="timeline-role">Administración - Recursos Humanos</h3>
-                            <h4 class="timeline-company">SJG MONTAJES INDUSTRIALES SRL</h4>
-                            <p>Gestión de horas y control de asistencia in-situ. Mejora de la precisión en registros mediante controles más claros y desarrollo de reportes internos analíticos para optimizar procesos disciplinarios.</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <span class="timeline-date">2025 — Actualmente</span>
-                            <h3 class="timeline-role">Diplomatura Full Stack Web Development</h3>
-                            <h4 class="timeline-company">Coderhouse</h4>
-                            <p>Desarrollo end-to-end con React, Next.js, Node.js y C#. Implementación de APIs REST, autenticación (JWT) y manejo de estados en proyectos colaborativos bajo metodologías ágiles.</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <span class="timeline-date">2023 — 2025</span>
-                            <h3 class="timeline-role">Tecnicatura Universitaria en Programación</h3>
-                            <h4 class="timeline-company">Universidad Tecnológica Nacional</h4>
-                            <p>Formación académica en fundamentos de algoritmos, estructuras de datos y lógica. Desarrollo sólido con <strong>C# y .NET Core</strong>, modelado de bases de datos relacionales y arquitectura de computadoras.</p>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="projects section">
+        <!-- Skills Matrix (Bento Grid) -->
+        <section id="skills" class="skills-section section">
+            <div class="container reveal">
+                <div class="section-header text-center">
+                    <span class="eyebrow">Competencias</span>
+                    <h2 class="section-title">Matriz Tecnológica</h2>
+                </div>
+                
+                <div class="bento-skills">
+                    <div class="bento-box glow-card">
+                        <div class="bento-icon">💻</div>
+                        <h3>Lenguajes & Frontend</h3>
+                        <p>Dominio en la construcción de interfaces escalables e interactivas.</p>
+                        <div class="tags-container">
+                            <span class="tag tag-blue">JavaScript</span>
+                            <span class="tag tag-blue">C#</span>
+                            <span class="tag tag-blue">HTML/CSS</span>
+                            <span class="tag tag-solid">React</span>
+                            <span class="tag tag-solid">Next.js</span>
+                            <span class="tag tag-outline">UI/UX</span>
+                        </div>
+                    </div>
+
+                    <div class="bento-box glow-card">
+                        <div class="bento-icon">⚙️</div>
+                        <h3>Backend & Arquitectura</h3>
+                        <p>Desarrollo de servicios robustos y sistemas distribuidos eficientes.</p>
+                        <div class="tags-container">
+                            <span class="tag tag-gold">Node.js</span>
+                            <span class="tag tag-gold">Express</span>
+                            <span class="tag tag-gold">ASP.NET</span>
+                            <span class="tag tag-outline">Entity Framework</span>
+                            <span class="tag tag-outline">APIs REST</span>
+                        </div>
+                    </div>
+
+                    <div class="bento-box glow-card span-half">
+                        <div class="bento-icon">🗄️</div>
+                        <h3>Bases de Datos</h3>
+                        <p>Modelado de datos y consultas complejas para alto rendimiento.</p>
+                        <div class="tags-container">
+                            <span class="tag tag-blue">SQL Server</span>
+                            <span class="tag tag-blue">SQL</span>
+                            <span class="tag tag-outline">Supabase</span>
+                        </div>
+                    </div>
+
+                    <div class="bento-box glow-card span-half">
+                        <div class="bento-icon">🛠️</div>
+                        <h3>Herramientas & Seguridad</h3>
+                        <p>Gestión de flujo de trabajo, autenticación y despliegue.</p>
+                        <div class="tags-container">
+                            <span class="tag tag-solid">Git</span>
+                            <span class="tag tag-solid">Postman</span>
+                            <span class="tag tag-outline">JWT</span>
+                            <span class="tag tag-outline">Cookies/Session</span>
+                            <span class="tag tag-blue">Scrum</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Showcase (With Images) -->
+        <section id="projects" class="projects-section section">
             <div class="container">
                 <div class="section-header text-center reveal">
+                    <span class="eyebrow">Portafolio</span>
                     <h2 class="section-title">Proyectos Seleccionados</h2>
-                    <p class="section-subtitle" style="margin-bottom: 2rem;">Sistemas con bases de datos en producción y desarrollos Frontend.</p>
                 </div>
 
                 <div class="projects-filter reveal">
-                    <button class="filter-btn active" data-filter="all">Todos los Proyectos</button>
-                    <button class="filter-btn" data-filter="fullstack">Sistemas Full Stack (DB)</button>
-                    <button class="filter-btn" data-filter="frontend">Frontend & Landings</button>
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="fullstack">Sistemas Full Stack</button>
+                    <button class="filter-btn" data-filter="frontend">Web & Frontend</button>
                 </div>
 
                 <div class="projects-grid">
-                    <!-- Project 1: SJG Omisiones -->
+                    <!-- Project 1 -->
                     <article class="project-card reveal" data-category="fullstack">
-                        <div class="project-content">
+                        <div class="project-image-wrapper">
+                            <img src="images/sjg_omisiones.png" alt="SJG Omisiones Interface" class="project-img" loading="lazy">
+                        </div>
+                        <div class="project-info">
                             <div class="project-header">
                                 <h3 class="project-title">SJG Omisiones</h3>
-                                <a href="https://sjg-omisiones.vercel.app/" target="_blank" rel="noopener" class="project-ext-link">↗</a>
+                                <a href="https://sjg-omisiones.vercel.app/" target="_blank" rel="noopener" class="project-ext-link" aria-label="Ver proyecto SJG Omisiones">↗</a>
                             </div>
-                            <p class="project-desc">Sistema de control de asistencia para operarios en planta Ternium. Permite auditar y corregir errores en fichajes, eliminando la duplicidad de datos y centralizando la gestión administrativa en tiempo real.</p>
+                            <p class="project-desc">Sistema de control de asistencia para operarios en planta Ternium. Permite auditar y corregir errores en fichajes, eliminando duplicidad de datos en tiempo real.</p>
                             <div class="project-tags">
+                                <span class="tag">Next.js</span>
+                                <span class="tag">SQL</span>
                                 <span class="tag">Full Stack</span>
-                                <span class="tag">Next.js + BD</span>
-                                <span class="tag">Privado</span>
                             </div>
                         </div>
                     </article>
 
-                    <!-- Project 2: GB Barberia -->
+                    <!-- Project 2 -->
                     <article class="project-card reveal" data-category="fullstack">
-                        <div class="project-content">
+                        <div class="project-image-wrapper">
+                            <img src="images/gb_barberia.png" alt="Turnera GB Barbería" class="project-img" loading="lazy">
+                        </div>
+                        <div class="project-info">
                             <div class="project-header">
                                 <h3 class="project-title">Turnera GB Barbería</h3>
                                 <a href="https://gb-barberia.vercel.app/" target="_blank" rel="noopener" class="project-ext-link">↗</a>
                             </div>
-                            <p class="project-desc">Plataforma de reservas online para negocios de estética. Incluye gestión de turnos automática, panel de administración para el dueño y base de datos sincronizada para evitar solapamiento de citas.</p>
+                            <p class="project-desc">Plataforma de reservas online para negocios de estética. Incluye gestión de turnos automática, panel de administración para el dueño y base de datos en tiempo real.</p>
                             <div class="project-tags">
-                                <span class="tag">Full Stack</span>
-                                <span class="tag">Node + BD</span>
-                                <span class="tag">Turnero</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">Base de Datos</span>
                             </div>
                         </div>
                     </article>
 
-                    <!-- Project 3: Landing SJG -->
+                    <!-- Project 3 -->
                     <article class="project-card reveal" data-category="frontend">
-                        <div class="project-content">
+                        <div class="project-image-wrapper">
+                            <img src="images/landing.png" alt="Web SJG Montajes" class="project-img" loading="lazy">
+                        </div>
+                        <div class="project-info">
                             <div class="project-header">
                                 <h3 class="project-title">Web SJG Montajes</h3>
                                 <a href="https://websjg.vercel.app/" target="_blank" rel="noopener" class="project-ext-link">↗</a>
                             </div>
-                            <p class="project-desc">Sitio institucional robusto para una empresa de ingeniería pesada. Diseñado con un enfoque en SEO técnico y rendimiento óptimo para facilitar la captación de clientes B2B en el sector industrial.</p>
+                            <p class="project-desc">Sitio institucional corporativo diseñado con un enfoque en SEO técnico y rendimiento óptimo para facilitar la captación de clientes B2B en el sector industrial.</p>
                             <div class="project-tags">
                                 <span class="tag">Frontend</span>
-                                <span class="tag">Corporativo</span>
-                            </div>
-                        </div>
-                    </article>
-                    
-                    <!-- Project 4: Choripan Hub -->
-                    <article class="project-card reveal" data-category="frontend">
-                        <div class="project-content">
-                            <div class="project-header">
-                                <h3 class="project-title">Marcelo's Choripán</h3>
-                                <a href="https://marcelo-s-choripan-hub.vercel.app/" target="_blank" rel="noopener" class="project-ext-link">↗</a>
-                            </div>
-                            <p class="project-desc">E-commerce diseñado específicamente para el rubro gastronómico. Cuenta con un proceso de compra simplificado y micro-interacciones que mejoran la retención del cliente y la tasa de ventas.</p>
-                            <div class="project-tags">
-                                <span class="tag">Frontend</span>
-                                <span class="tag">Gastronomía</span>
+                                <span class="tag">Corp B2B</span>
                             </div>
                         </div>
                     </article>
 
-                    <!-- Project 5: Portfolio IA -->
+                    <!-- Project 4 -->
                     <article class="project-card reveal" data-category="frontend">
-                        <div class="project-content">
+                        <div class="project-image-wrapper">
+                            <img src="images/ecommerce.png" alt="Marcelo's Choripán Hub" class="project-img" loading="lazy">
+                        </div>
+                        <div class="project-info">
+                            <div class="project-header">
+                                <h3 class="project-title">Marcelo's Choripán</h3>
+                                <a href="https://marcelo-s-choripan-hub.vercel.app/" target="_blank" rel="noopener" class="project-ext-link">↗</a>
+                            </div>
+                            <p class="project-desc">E-commerce gastronómico interactivo. Cuenta con un proceso de compra simplificado y micro-interacciones que mejoran la retención del usuario.</p>
+                            <div class="project-tags">
+                                <span class="tag">E-commerce</span>
+                                <span class="tag">UX</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 5 -->
+                    <article class="project-card reveal" data-category="frontend">
+                        <div class="project-image-wrapper">
+                            <img src="images/dashboard.png" alt="Agencia IA" class="project-img" loading="lazy">
+                        </div>
+                        <div class="project-info">
                             <div class="project-header">
                                 <h3 class="project-title">Agencia IA Portfolio</h3>
                                 <a href="https://portfolio-ia-taupe.vercel.app/" target="_blank" rel="noopener" class="project-ext-link">↗</a>
                             </div>
-                            <p class="project-desc">Landing page de alto impacto visual para consultoría tecnológica. Implementa una estética futurista y componentes dinámicos para presentar servicios basados en Inteligencia Artificial.</p>
+                            <p class="project-desc">Landing page de alto impacto visual para consultoría tecnológica. Implementa una estética futurista y componentes dinámicos para presentar servicios AI.</p>
                             <div class="project-tags">
-                                <span class="tag">Frontend</span>
                                 <span class="tag">UI/UX</span>
+                                <span class="tag">Animaciones</span>
                             </div>
                         </div>
                     </article>
-                    
-                    <!-- Project 6: Mauro Theta -->
+
+                    <!-- Project 6 -->
                     <article class="project-card reveal" data-category="frontend">
-                        <div class="project-content">
+                        <div class="project-image-wrapper">
+                            <img src="images/webapp.png" alt="iPhoneTechno LB" class="project-img" loading="lazy">
+                        </div>
+                        <div class="project-info">
                             <div class="project-header">
                                 <h3 class="project-title">iPhoneTechno LB</h3>
                                 <a href="https://mauro-theta.vercel.app/" target="_blank" rel="noopener" class="project-ext-link">↗</a>
                             </div>
-                            <p class="project-desc">Catálogo digital premium especializado en productos Apple. Interfaz minimalista y de alta performance orientada a destacar la calidad de los dispositivos y facilitar el contacto con el vendedor.</p>
+                            <p class="project-desc">Catálogo digital premium especializado en productos Apple. Interfaz minimalista orientada a destacar la calidad de los dispositivos e incentivar el contacto.</p>
                             <div class="project-tags">
                                 <span class="tag">Frontend</span>
-                                <span class="tag">Diseño</span>
+                                <span class="tag">Catálogo</span>
                             </div>
                         </div>
                     </article>
@@ -272,15 +297,13 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact section">
+        <!-- CTA / Contact -->
+        <section id="contact" class="cta-section section">
             <div class="container">
-                <div class="contact-box reveal">
-                    <h2 class="section-title">¿Tienes un desafío operativo?</h2>
-                    <p class="text-body" style="max-width: 600px; margin: 0 auto 2rem;">
-                        Ya sea para automatizar flujos de trabajo, crear aplicaciones empresariales a medida o optimizar sistemas actuales, estoy listo para colaborar.
-                    </p>
-                    <a href="mailto:maurogarcia20178@gmail.com" class="btn btn-primary" style="padding: 1rem 3rem;">Enviar Email</a>
+                <div class="cta-box reveal glow-card">
+                    <h2>¿Listo para construir el próximo proyecto?</h2>
+                    <p class="text-body">Disponible para desarrollo corporativo, aplicaciones a medida y automatizaciones eficientes.</p>
+                    <a href="mailto:maurogarcia20178@gmail.com" class="btn btn-primary btn-lg">Contactar vía Email</a>
                 </div>
             </div>
         </section>
@@ -295,7 +318,7 @@
             </div>
             <div class="footer-socials">
                 <a href="https://www.linkedin.com/in/maurorgarcia" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
-                <a href="#" aria-label="GitHub">GitHub</a>
+                <a href="https://github.com/maurorgarcia/mrgarciadev" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
             </div>
         </div>
     </footer>
