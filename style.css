@@ -287,11 +287,26 @@ body::after {
 .project-tags .tag { font-size: 0.75rem; font-weight: 500; border: none; padding: 0; color: var(--text-muted); }
 
 /* Call to Action */
-.cta-section { padding-top: 10rem; }
+.cta-section { padding: 8rem 0; }
 .cta-box {
     display: flex; flex-direction: column; align-items: center; text-align: center;
+    background: radial-gradient(ellipse at top, rgba(255,255,255,0.04) 0%, transparent 70%);
+    border: 1px solid rgba(255,255,255,0.04);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.06);
+    border-radius: 24px;
+    padding: 5rem 2rem;
+    margin: 0 auto;
+    max-width: 900px;
 }
-.cta-box h2 { font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 1.5rem; color: #fff; letter-spacing: -0.04em; }
+.cta-box h2 { 
+    font-size: clamp(2.2rem, 5vw, 3.5rem); 
+    margin-bottom: 1rem; 
+    color: #fff; 
+    letter-spacing: -0.04em; 
+    max-width: 600px; /* Prevents awkward single-word wrapping */
+    text-wrap: balance; 
+}
+.cta-box .text-body { margin-bottom: 2.5rem; }
 
 /* Cursor Magnetic System */
 .cursor-glow {
