@@ -141,21 +141,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Magnetic Buttons Effect
-    const magneticBtns = document.querySelectorAll('.btn');
-    magneticBtns.forEach(btn => {
-        btn.addEventListener('mousemove', function(e) {
-            const rect = this.getBoundingClientRect();
-            const x = e.clientX - rect.left - rect.width / 2;
-            const y = e.clientY - rect.top - rect.height / 2;
-            
-            this.style.transition = 'none'; // Snappy tracking
-            this.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px)`;
-        });
-        
-        btn.addEventListener('mouseleave', function() {
-            this.style.transition = 'transform 0.5s cubic-bezier(0.16, 1, 0.3, 1)';
-            this.style.transform = `translate(0px, 0px)`;
-        });
-    });
 });
