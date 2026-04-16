@@ -117,4 +117,20 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // Cursor Glow Logic
+    const cursorGlow = document.getElementById('cursor-glow');
+    if (cursorGlow) {
+        document.addEventListener('mousemove', (e) => {
+            // Animate using Web Animations API or direct styling
+            cursorGlow.animate({
+                left: `${e.clientX}px`,
+                top: `${e.clientY}px`
+            }, { duration: 3000, fill: "forwards", easing: "ease" });
+            
+            // To make the glow perfectly center on the mouse pointer,
+            // we use transform translate(-50%, -50%) applied dynamically:
+            cursorGlow.style.transform = `translate(-50%, -50%)`;
+        });
+    }
 });
