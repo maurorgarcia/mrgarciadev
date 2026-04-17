@@ -3,37 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mauro Raúl García - Full Stack Developer en búsqueda de primera oportunidad IT. Especializado en React, Node.js y .NET.">
+    <meta name="description" content="Portafolio de Mauro Raúl García — Desarrollador Full Stack con formación en UTN. Especializado en React, Node.js, .NET Core y SQL Server. Disponible en Buenos Aires (Remoto/Híbrido).">
+    <meta name="keywords" content="Full Stack Developer, React, Node.js, .NET Core, C#, SQL Server, MongoDB, Next.js, Buenos Aires, desarrollador web">
+    <meta name="author" content="Mauro Raúl García">
+
+    <!-- OpenGraph -->
+    <meta property="og:title" content="Mauro Raúl García | Full Stack Developer">
+    <meta property="og:description" content="Desarrollador Full Stack con formación en UTN. Stack MERN y .NET Core. Disponible en Buenos Aires.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mrgarciadev.vercel.app">
+    <meta property="og:image" content="https://mrgarciadev.vercel.app/favicon.png">
+
     <title>Mauro Raúl García | Full Stack Developer</title>
-    
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
 
     <!-- Barra de progreso de lectura -->
     <div class="scroll-progress" id="progress-bar"></div>
 
-    <!-- El resplandor de fondo sutil -->
+    <!-- Fondo dinámico -->
     <div class="mesh-gradient"></div>
 
     <!-- Barra de Navegación -->
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
-            <a href="#" class="logo">MG.</a>
+            <a href="#" class="logo">&lt;mrgdev/&gt;</a>
             <div class="nav-links" id="nav-links">
                 <a href="#sobre-mi" class="nav-link">Sobre Mí</a>
                 <a href="#experiencia" class="nav-link">Experiencia</a>
                 <a href="#habilidades" class="nav-link">Habilidades</a>
                 <a href="#proyectos" class="nav-link">Proyectos</a>
-                <a href="https://github.com/maurorgarcia" target="_blank" class="nav-link">GitHub</a>
-                <a href="https://www.linkedin.com/in/maurorgarcia" target="_blank" class="btn-sm">LinkedIn</a>
+                <a href="https://github.com/maurorgarcia" target="_blank" rel="noopener noreferrer" class="nav-link">GitHub</a>
+                <a href="https://www.linkedin.com/in/maurorgarcia" target="_blank" rel="noopener noreferrer" class="btn-sm">LinkedIn</a>
             </div>
-            <button class="mobile-menu-btn" id="mobile-btn">
+            <button class="mobile-menu-btn" id="mobile-btn" aria-label="Abrir menú">
                 <span></span><span></span><span></span>
             </button>
         </div>
@@ -44,83 +55,67 @@
         <div class="container hero-container">
             <div class="status-badge">
                 <span class="status-dot"></span>
-                Disponible para nuevos desafíos IT
+                Disponible · Buenos Aires (Remoto/Híbrido)
             </div>
-            <h1 class="hero-title">Construyendo el <span class="gradient-text">Futuro del Software.</span></h1>
+            <h1 class="hero-title">Desarrollador <span class="gradient-text">Full Stack.</span></h1>
             <p class="hero-description">
-                Soy <strong>Mauro Raúl García</strong>, un desarrollador <strong>Full Stack</strong> apasionado por crear aplicaciones robustas, escalables y performantes. Especializado en el ecosistema de <strong>JavaScript (MERN)</strong> y el poder de <strong>.NET</strong>.
+                Formado en la <strong>UTN</strong>, cursando Diplomatura en <strong>Coderhouse</strong>. Construyo aplicaciones con el stack <strong>MERN</strong> y <strong>.NET Core</strong>, enfocado en resultados concretos.
             </p>
             <div class="hero-actions">
-                <a href="#proyectos" class="btn btn-primary">Explorar Proyectos</a>
-                <a href="mailto:maurogarcia20178@gmail.com" class="btn btn-secondary">Contactar</a>
-                <a href="2026-CV-MAUROGARCIA-DEV.pdf" download class="btn btn-outline">Descargar CV</a>
-            </div>
-            <div class="hero-stats">
-                <div class="stat">
-                    <span class="stat-number">Full</span>
-                    <span class="stat-label">Stack Expertise</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">End</span>
-                    <span class="stat-label">to End Solutions</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">100%</span>
-                    <span class="stat-label">Compromiso Técnico</span>
-                </div>
+                <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
+                <a href="#sobre-mi" class="btn btn-secondary">Mi Perfil</a>
+                <a href="docs/CV-MauroGarcia.pdf" download class="btn btn-outline">Descargar CV</a>
             </div>
         </div>
     </header>
 
-    <!-- Sobre Mí - Nuevo Diseño Premium -->
+    <!-- Sobre Mí -->
     <section class="section section-alt" id="sobre-mi">
         <div class="container reveal">
             <div class="section-header text-center">
                 <span class="eyebrow">Mi Perfil</span>
-                <h2 class="section-title">Tecnología con propósito</h2>
+                <h2 class="section-title">Quién Soy</h2>
             </div>
             
             <div class="about-bento">
-                <!-- Card 1: Versatilidad Técnica -->
+                <!-- Card 1 -->
                 <div class="bento-card bento-large">
                     <div class="bento-glow blue"></div>
                     <div class="bento-content">
-                        <span class="bento-tag">Full Stack</span>
-                        <h3>Arquitecturas Híbridas</h3>
-                        <p>Me especializo en unir lo mejor de dos mundos: la agilidad y dinamismo de <strong>React y Node.js</strong> con la robustez y tipado fuerte de <strong>.NET Core</strong>. Mi objetivo es construir software que no solo funcione, sino que sea fácil de mantener y escalar a largo plazo.</p>
+                        <span class="bento-tag">Stack Principal</span>
+                        <h3>MERN & .NET Core</h3>
+                        <p>Construyo aplicaciones completas: interfaces con <strong>React y Next.js</strong>, APIs con <strong>Node.js / Express</strong> o <strong>ASP.NET Core</strong>, y bases de datos con <strong>SQL Server y MongoDB</strong>. Me interesa entender el sistema de punta a punta.</p>
                     </div>
                 </div>
 
-                <!-- Card 2: Mentalidad Resolutiva -->
+                <!-- Card 2 -->
                 <div class="bento-card bento-medium">
                     <div class="bento-glow gold"></div>
                     <div class="bento-content">
-                        <div class="big-stat">Agile</div>
-                        <h3>Estrategia y Ejecución</h3>
-                        <p>Abordo cada proyecto con una mentalidad de resolución de problemas. Desde el diseño de la base de datos hasta la experiencia de usuario final, busco la <strong>eficiencia extrema</strong> en cada capa de la aplicación.</p>
+                        <div class="big-stat">3</div>
+                        <h3>Proyectos en producción</h3>
+                        <p>Sistemas con usuarios reales, problemas de negocio concretos. No solo ejercicios de laboratorio.</p>
                     </div>
                 </div>
 
-                <!-- Card 3: Formación Continua -->
+                <!-- Card 3 -->
                 <div class="bento-card bento-small">
                     <div class="bento-content">
-                        <h3>Educación Continua</h3>
-                        <p>Formación técnica en la <strong>UTN</strong> potenciada por la especialización moderna de <strong>Coderhouse</strong>.</p>
+                        <h3>Formación</h3>
+                        <p>Tecnicatura en Programación · <strong>UTN</strong><br>Diplomatura Full Stack · <strong>Coderhouse</strong></p>
                     </div>
                 </div>
 
-                <!-- Card 4: Colaboración -->
+                <!-- Card 4 -->
                 <div class="bento-card bento-small">
                     <div class="bento-content">
-                        <h3>Team Player</h3>
-                        <p>Experiencia trabajando en entornos dinámicos, coordinando equipos y comunicando ideas técnicas con claridad.</p>
+                        <h3>Metodología</h3>
+                        <p>Git Flow, Scrum y entregas iterativas. Trabajo con feedback continuo y objetivos claros.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-
 
     <!-- Experiencia y Educación -->
     <section class="section" id="experiencia">
@@ -129,14 +124,14 @@
                 <!-- Columna Experiencia -->
                 <div class="column reveal">
                     <span class="eyebrow">Trayectoria</span>
-                    <h2 class="section-title">Experiencia Laboral</h2>
+                    <h2 class="section-title">Experiencia</h2>
                     
                     <div class="timeline">
                         <div class="timeline-item">
                             <span class="date">Marzo 2025 — Actualidad</span>
                             <h3>Administración y RRHH</h3>
                             <h4>SJG Montajes Industriales SRL</h4>
-                            <p>Gestión integral de asistencia para 50+ operarios en planta industrial. <strong>Logro clave:</strong> Automatización de procesos de fichaje que redujo errores en un 40% y ahorró 10hs semanales de trabajo manual.</p>
+                            <p>Gestión de asistencia para 50+ operarios. Automaticé registros con herramientas propias, reduciendo el error humano un <strong>40%</strong> y recuperando <strong>10hs semanales</strong> de trabajo manual.</p>
                             <div class="achievement-tags">
                                 <span>Automatización</span>
                                 <span>SQL Server</span>
@@ -149,20 +144,20 @@
                 <!-- Columna Educación -->
                 <div class="column reveal">
                     <span class="eyebrow">Formación</span>
-                    <h2 class="section-title">Educación IT</h2>
+                    <h2 class="section-title">Educación</h2>
                     
                     <div class="timeline">
                         <div class="timeline-item">
-                            <span class="date">2025 — Actualmente</span>
-                            <h3>Diplomatura Full Stack</h3>
+                            <span class="date">2025 — En curso</span>
+                            <h3>Diplomatura Full Stack Web</h3>
                             <h4>Coderhouse</h4>
-                            <p>Desarrollo integral con metodologías ágiles (Scrum). Stack: React, Next.js, Node.js, Express, MongoDB.</p>
+                            <p>React, Next.js, Node.js, Express y MongoDB con metodologías ágiles.</p>
                         </div>
                         <div class="timeline-item">
                             <span class="date">2023 — 2025</span>
                             <h3>Tecnicatura en Programación</h3>
-                            <h4>Univ. Tecnológica Nacional (UTN)</h4>
-                            <p>Ingeniería de software, algoritmos, estructuras de datos y backend con C# / .NET Core.</p>
+                            <h4>Universidad Tecnológica Nacional (UTN)</h4>
+                            <p>Algoritmos, estructuras de datos y desarrollo backend con <strong>C# / .NET Core</strong>.</p>
                         </div>
                     </div>
                 </div>
@@ -172,46 +167,58 @@
 
     <!-- Habilidades -->
     <section class="section section-alt" id="habilidades">
-        <div class="container container-narrow reveal">
+        <div class="container reveal">
             <div class="section-header text-center">
-                <span class="eyebrow">Mi Stack</span>
-                <h2 class="section-title">Tecnologías & Herramientas</h2>
+                <span class="eyebrow">Stack Tecnológico</span>
+                <h2 class="section-title">Habilidades Técnicas</h2>
             </div>
             
-            <div class="skills-matrix">
-                <div class="skill-category">
+            <div class="skills-grid">
+                <!-- Frontend -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                    </div>
                     <h3>Frontend</h3>
+                    <p>Interfaces reactivas y componentes reutilizables.</p>
                     <div class="skill-tags">
                         <span>React</span>
                         <span>Next.js</span>
-                        <span>JavaScript (ES6+)</span>
                         <span>TypeScript</span>
-                        <span>HTML5/CSS3</span>
                         <span>Tailwind CSS</span>
-                        <span>UI/UX</span>
+                        <span>JavaScript ES6+</span>
                     </div>
                 </div>
-                <div class="skill-category">
+
+                <!-- Backend -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                    </div>
                     <h3>Backend</h3>
+                    <p>APIs robustas y gestión de datos.</p>
                     <div class="skill-tags">
                         <span>Node.js</span>
-                        <span>Express</span>
                         <span>ASP.NET Core</span>
-                        <span>Entity Framework</span>
+                        <span>C#</span>
                         <span>SQL Server</span>
                         <span>MongoDB</span>
-                        <span>REST APIs</span>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h3>DevOps & Otros</h3>
+
+                <!-- Tools -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                    </div>
+                    <h3>Herramientas</h3>
+                    <p>Flujos de trabajo y despliegue continuo.</p>
                     <div class="skill-tags">
-                        <span>Git/GitHub</span>
+                        <span>Git / GitHub</span>
                         <span>Vercel</span>
                         <span>Postman</span>
-                        <span>JWT Auth</span>
-                        <span>Supabase</span>
-                        <span>Scrum/Agile</span>
+                        <span>REST APIs</span>
+                        <span>Scrum</span>
                     </div>
                 </div>
             </div>
@@ -223,36 +230,44 @@
         <div class="container">
             <div class="section-header reveal">
                 <span class="eyebrow">Portafolio</span>
-                <h2 class="section-title">Proyectos Seleccionados</h2>
-                <p class="section-disclaimer">* Todos los proyectos incluyen código fuente en <a href="https://github.com/maurorgarcia" target="_blank">GitHub</a> y están deployados en producción.</p>
+                <h2 class="section-title">Proyectos en Producción</h2>
+                <p class="section-disclaimer">Código fuente disponible en <a href="https://github.com/maurorgarcia" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
             </div>
 
-            <div class="projects-grid">
+            <div class="slider-wrapper">
+                <button class="slider-btn prev" aria-label="Anterior" id="prev-btn">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+                </button>
+                <div class="projects-grid" id="projects-grid">
                 <!-- SJG Omisiones -->
                 <article class="project-card reveal featured">
-                    <div class="project-badge">PROYECTO DESTACADO</div>
+                    <div class="project-badge">EN PRODUCCIÓN</div>
                     <div class="project-image">
-                        <img src="images/sjg-omisiones.vercel.app_login.png" alt="SJG Omisiones Dashboard">
+                        <img src="images/sjg-omisiones.vercel.app_login.png" alt="SJG Omisiones Dashboard" loading="lazy">
                     </div>
                     <div class="project-content">
                         <div class="project-top">
-                            <h3>SJG Omisiones <span class="badge-status">EN PRODUCCIÓN</span></h3>
+                            <h3>SJG Omisiones Dashboard</h3>
                             <div class="project-links">
-                                <a href="https://github.com/maurorgarcia/sjg-omisiones" target="_blank" class="link-icon" title="Ver código">💻</a>
-                                <a href="https://sjg-omisiones.vercel.app/" target="_blank" class="link-icon" title="Ver demo">↗</a>
+                                <a href="https://github.com/maurorgarcia/sjg-omisiones" target="_blank" rel="noopener noreferrer" class="link-icon" title="Ver código">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12c0-5.523-4.477-10-10-10z"/></svg>
+                                </a>
+                                <a href="https://sjg-omisiones.vercel.app/" target="_blank" rel="noopener noreferrer" class="link-icon" title="Ver demo">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                </a>
                             </div>
                         </div>
-                        <p class="project-problem"><strong>Problema:</strong> Errores manuales en fichajes de 50+ operarios causaban conflictos de pago.</p>
-                        <p class="project-solution"><strong>Solución:</strong> Dashboard en tiempo real para auditoría y corrección de asistencias con alertas automáticas.</p>
+                        <p class="project-problem"><strong>Problema:</strong> Gestión ineficiente de fichajes manuales para 50+ operarios industriales.</p>
+                        <p class="project-solution"><strong>Solución:</strong> Panel de auditoría en tiempo real con alertas automáticas y base de datos relacional.</p>
                         <div class="project-impact">
-                            <span>📉 40% menos errores</span>
-                            <span>⏱️ 10hs ahorradas/semana</span>
+                            <span>-40% errores críticos</span>
+                            <span>10hs ahorradas / semana</span>
                         </div>
                         <div class="project-tags">
                             <span>Next.js</span>
                             <span>SQL Server</span>
-                            <span>React Query</span>
-                            <span>Dashboard</span>
+                            <span>Node.js</span>
+                            <span>Prisma</span>
                         </div>
                     </div>
                 </article>
@@ -260,23 +275,27 @@
                 <!-- Turnera -->
                 <article class="project-card reveal">
                     <div class="project-image">
-                        <img src="images/gb-barberia.vercel.app_.png" alt="Turnera Barberia">
+                        <img src="images/gb-barberia.vercel.app_.png" alt="Turnera GB Barbería" loading="lazy">
                     </div>
                     <div class="project-content">
                         <div class="project-top">
                             <h3>Turnera GB Barbería</h3>
                             <div class="project-links">
-                                <a href="https://github.com/maurorgarcia/turnera-barberia" target="_blank" class="link-icon" title="Ver código">💻</a>
-                                <a href="https://gb-barberia.vercel.app/" target="_blank" class="link-icon" title="Ver demo">↗</a>
+                                <a href="https://github.com/maurorgarcia/turnera-barberia" target="_blank" rel="noopener noreferrer" class="link-icon" title="Ver código">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12c0-5.523-4.477-10-10-10z"/></svg>
+                                </a>
+                                <a href="https://gb-barberia.vercel.app/" target="_blank" rel="noopener noreferrer" class="link-icon" title="Ver demo">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                </a>
                             </div>
                         </div>
-                        <p class="project-problem"><strong>Problema:</strong> Gestión manual de turnos generaba sobrecarga administrativa y pérdida de clientes.</p>
-                        <p class="project-solution"><strong>Solución:</strong> Sistema de reservas online con panel admin, notificaciones y gestión de servicios.</p>
+                        <p class="project-problem"><strong>Problema:</strong> Saturación administrativa por gestión de turnos telefónicos.</p>
+                        <p class="project-solution"><strong>Solución:</strong> Sistema de reservas con autenticación, panel de administración y notificaciones.</p>
                         <div class="project-tags">
                             <span>Node.js</span>
                             <span>Express</span>
                             <span>MongoDB</span>
-                            <span>JWT Auth</span>
+                            <span>JWT</span>
                         </div>
                     </div>
                 </article>
@@ -284,62 +303,141 @@
                 <!-- Web SJG -->
                 <article class="project-card reveal">
                     <div class="project-image">
-                        <img src="images/websjg.vercel.app_.png" alt="Sitio SJG Montajes">
+                        <img src="images/websjg.vercel.app_.png" alt="Sitio Web SJG Montajes Industriales" loading="lazy">
                     </div>
                     <div class="project-content">
                         <div class="project-top">
-                            <h3>Web SJG Montajes</h3>
+                            <h3>Web Corporativa SJG</h3>
                             <div class="project-links">
-                                <a href="https://github.com/maurorgarcia/web-sjg" target="_blank" class="link-icon" title="Ver código">💻</a>
-                                <a href="https://websjg.vercel.app/" target="_blank" class="link-icon" title="Ver demo">↗</a>
+                                <a href="https://github.com/maurorgarcia/web-sjg" target="_blank" rel="noopener noreferrer" class="link-icon" title="Ver código">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12c0-5.523-4.477-10-10-10z"/></svg>
+                                </a>
+                                <a href="https://websjg.vercel.app/" target="_blank" rel="noopener noreferrer" class="link-icon" title="Ver demo">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                </a>
                             </div>
                         </div>
-                        <p class="project-problem"><strong>Problema:</strong> Empresa sin presencia digital para captación de clientes B2B.</p>
-                        <p class="project-solution"><strong>Solución:</strong> Landing corporativa con SEO optimizado, formulario de contacto y diseño responsive.</p>
+                        <p class="project-problem"><strong>Problema:</strong> Empresa sin presencia digital para captar clientes B2B.</p>
+                        <p class="project-solution"><strong>Solución:</strong> Landing corporativa optimizada para SEO y tráfico mobile.</p>
                         <div class="project-tags">
                             <span>Next.js</span>
                             <span>SEO</span>
                             <span>Responsive</span>
-                            <span>Performance</span>
                         </div>
                     </div>
                 </article>
+
+                <!-- iPhone Techno -->
+                <article class="project-card reveal">
+                    <div class="project-image">
+                        <img src="images/mauro-theta.vercel.app_.png" alt="iPhone Techno Ecommerce" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-top">
+                            <h3>iPhone Techno</h3>
+                            <div class="project-links">
+                                <a href="https://mauro-theta.vercel.app/" target="_blank" rel="noopener noreferrer" class="link-icon" title="Ver demo">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <p class="project-problem"><strong>Problema:</strong> Venta de celulares en redes sociales sin catálogo claro que genere confianza.</p>
+                        <p class="project-solution"><strong>Solución:</strong> Ecommerce y catálogo de productos moderno conectado a WhatsApp para cerrar ventas directo.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>E-commerce</span>
+                            <span>UI/UX</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Los Choripanes de Marcelo -->
+                <article class="project-card reveal">
+                    <div class="project-image">
+                        <img src="images/marcelo-s-choripan-hub.vercel.app_.png" alt="Los Choripanes de Marcelo" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-top">
+                            <h3>Los Choripanes de Marcelo</h3>
+                            <div class="project-links">
+                                <a href="https://marcelo-s-choripan-hub.vercel.app/" target="_blank" rel="noopener noreferrer" class="link-icon" title="Ver demo">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <p class="project-problem"><strong>Problema:</strong> Local de comida muy popular pero sin presencia digital profesional para recibir más clientela.</p>
+                        <p class="project-solution"><strong>Solución:</strong> Landing page inmersiva que refleja el ambiente del lugar y facilita consultas rápidas.</p>
+                        <div class="project-tags">
+                            <span>Next.js</span>
+                            <span>Frontend</span>
+                            <span>Mobile First</span>
+                        </div>
+                    </div>
+                </article>
+                </div>
+                <button class="slider-btn next" aria-label="Siguiente" id="next-btn">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                </button>
             </div>
         </div>
     </section>
 
-    <!-- Contacto CTA -->
+    <!-- CTA -->
     <section class="section section-cta">
         <div class="container text-center reveal">
-            <span class="eyebrow">¿Interesado en mi perfil?</span>
-            <h2 class="section-title">Estoy listo para sumarme a tu equipo</h2>
-            <p class="cta-description">Busco mi primera oportunidad como desarrollador Junior o Trainee. Estoy abierto a modalidad remota o presencial en Buenos Aires.</p>
+            <span class="eyebrow">Contacto</span>
+            <h2 class="section-title">¿Buscás un desarrollador?</h2>
+            <p class="cta-description">Estoy disponible para incorporarme a equipos como <strong>Full Stack Developer</strong>. Buenos Aires · Remoto o Híbrido.</p>
             <div class="cta-actions">
-                <a href="mailto:maurogarcia20178@gmail.com" class="btn btn-primary btn-lg">Enviar Email</a>
-                <a href="https://www.linkedin.com/in/maurorgarcia" target="_blank" class="btn btn-secondary btn-lg">LinkedIn</a>
-                <a href="https://github.com/maurorgarcia" target="_blank" class="btn btn-outline btn-lg">GitHub</a>
-            </div>
-            <div class="contact-info">
-                <p>📍 San Nicolás de los Arroyos, Buenos Aires, Argentina</p>
-                <p>💼 Disponibilidad: Full-time | Remoto/Híbrido/Presencial</p>
+                <a href="mailto:maurogarcia20178@gmail.com" class="btn btn-primary btn-lg">Escribime</a>
+                <a href="https://www.linkedin.com/in/maurorgarcia" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg">LinkedIn</a>
+                <a href="https://github.com/maurorgarcia" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-lg">GitHub</a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container footer-content text-center">
-            <div class="footer-social">
-                <a href="https://github.com/maurorgarcia" target="_blank" class="social-link">GitHub</a>
-                <a href="https://www.linkedin.com/in/maurorgarcia" target="_blank" class="social-link">LinkedIn</a>
-                <a href="mailto:maurogarcia20178@gmail.com" class="social-link">Email</a>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">&lt;mrgdev/&gt;</a>
+                <p class="footer-tagline">Desarrollador Full Stack · Buenos Aires, Argentina.</p>
+                <div class="footer-status">
+                    <span class="status-dot"></span>
+                    <span>Disponible para nuevos proyectos</span>
+                </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Mauro Raúl García. Desarrollado con ❤️ y mucho café.</p>
+            
+            <div class="footer-nav">
+                <h4>Navegación</h4>
+                <a href="#inicio">Inicio</a>
+                <a href="#sobre-mi">Perfil</a>
+                <a href="#experiencia">Experiencia</a>
+                <a href="#proyectos">Proyectos</a>
             </div>
+
+            <div class="footer-contact">
+                <h4>Redes</h4>
+                <div class="footer-social-new">
+                    <a href="https://github.com/maurorgarcia" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12c0-5.523-4.477-10-10-10z"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/maurorgarcia" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                    <a href="mailto:maurogarcia20178@gmail.com" aria-label="Email">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="container footer-bottom-new">
+            <p>&copy; 2026 Mauro Raúl García. Todos los derechos reservados.</p>
         </div>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

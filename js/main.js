@@ -15,8 +15,10 @@ document.addEventListener('DOMContentLoaded', () => {
     
     if (mobileBtn && navLinks) {
         mobileBtn.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
+            const isActive = navLinks.classList.toggle('active');
             mobileBtn.classList.toggle('active');
+            // Bloquear scroll del body cuando el menú está abierto
+            document.body.classList.toggle('menu-open', isActive);
         });
 
         // Close menu when clicking a link
@@ -25,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
                 mobileBtn.classList.remove('active');
+                document.body.classList.remove('menu-open');
             });
         });
     }
@@ -33,16 +36,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const navbar = document.getElementById('navbar');
     const progressBar = document.getElementById('progress-bar');
 
-    window.addEventListener('scroll', () => {
-        // Navbar scrolled state
-        navbar.classList.toggle('scrolled', window.scrollY > 50);
+    const handleScroll = () => {
+        const winScroll = window.scrollY;
+        const height = document.documentElement.scrollHeight - window.innerHeight;
+        
+        navbar.classList.toggle('scrolled', winScroll > 50);
+        
+        if (progressBar && height > 0) {
+            const scrolled = (winScroll / height) * 100;
+            progressBar.style.display = winScroll > 10 ? 'block' : 'none';
+            progressBar.style.width = `${scrolled}%`;
+        }
+    };
 
-        // Progress bar logic
-        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        const scrolled = (winScroll / height) * 100;
-        if (progressBar) progressBar.style.width = scrolled + "%";
-    });
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll(); // Initial check
 
     // 4. card Tilt Effect
 
@@ -81,6 +89,26 @@ document.addEventListener('DOMContentLoaded', () => {
     
     window.addEventListener('scroll', revealOnScroll);
     revealOnScroll(); // Trigger once on load
+
+    // 6. Projects Slider
+    const projectsGrid = document.getElementById('projects-grid');
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+
+    if (projectsGrid && prevBtn && nextBtn) {
+        const scrollAmount = () => {
+            const card = projectsGrid.querySelector('.project-card');
+            return card ? card.offsetWidth + 32 : 300; // 32px equals 2rem gap
+        };
+
+        prevBtn.addEventListener('click', () => {
+            projectsGrid.scrollBy({ left: -scrollAmount(), behavior: 'smooth' });
+        });
+
+        nextBtn.addEventListener('click', () => {
+            projectsGrid.scrollBy({ left: scrollAmount(), behavior: 'smooth' });
+        });
+    }
 });
 
 
