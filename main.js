@@ -1,144 +1,86 @@
 document.addEventListener('DOMContentLoaded', () => {
     
-    // Mobile Menu Toggle
-    const mobileBtn = document.querySelector('.mobile-menu-btn');
-    const navLinks = document.querySelector('.nav-links');
+    // 1. Mouse Tracking Glow Effect
+    const glow = document.createElement('div');
+    glow.className = 'mouse-glow';
+    document.body.appendChild(glow);
+
+    window.addEventListener('mousemove', (e) => {
+        glow.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+    });
+
+    // 2. Mobile Menu Toggle - Class-based for consistency
+    const mobileBtn = document.getElementById('mobile-btn');
+    const navLinks = document.getElementById('nav-links');
     
     if (mobileBtn && navLinks) {
         mobileBtn.addEventListener('click', () => {
             navLinks.classList.toggle('active');
-            
-            // Animation for Hamburger
-            const spans = mobileBtn.querySelectorAll('span');
-            if (navLinks.classList.contains('active')) {
-                spans[0].style.transform = 'translateY(7px) rotate(45deg)';
-                spans[1].style.opacity = '0';
-                spans[2].style.transform = 'translateY(-7px) rotate(-45deg)';
-            } else {
-                spans[0].style.transform = 'none';
-                spans[1].style.opacity = '1';
-                spans[2].style.transform = 'none';
-            }
+            mobileBtn.classList.toggle('active');
         });
 
         // Close menu when clicking a link
-        navLinks.querySelectorAll('a').forEach(link => {
+        const links = navLinks.querySelectorAll('a');
+        links.forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
-                const spans = mobileBtn.querySelectorAll('span');
-                spans[0].style.transform = 'none';
-                spans[1].style.opacity = '1';
-                spans[2].style.transform = 'none';
+                mobileBtn.classList.remove('active');
             });
         });
     }
 
-    // Navbar Background, Smart Hide & Progress Bar on Scroll
+    // 3. Navbar Appearance & Progress Bar
     const navbar = document.getElementById('navbar');
-    const progressBar = document.getElementById('scroll-progress');
-    let lastScrollY = window.scrollY;
-    
+    const progressBar = document.getElementById('progress-bar');
+
     window.addEventListener('scroll', () => {
-        // Transparent to Solid Navbar
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-        
-        // Smart Hide Navbar (scroll down hides, scroll up shows)
-        if (window.scrollY > lastScrollY && window.scrollY > 150) {
-            navbar.classList.add('hidden-nav');
-        } else {
-            navbar.classList.remove('hidden-nav');
-        }
-        lastScrollY = window.scrollY;
-        
-        // Progress Bar logic
+        // Navbar scrolled state
+        navbar.classList.toggle('scrolled', window.scrollY > 50);
+
+        // Progress bar logic
         const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
         const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
         const scrolled = (winScroll / height) * 100;
-        if(progressBar) progressBar.style.width = scrolled + "%";
+        if (progressBar) progressBar.style.width = scrolled + "%";
     });
 
-    // Scroll Reveal Animation (Intersection Observer)
-    const revealElements = document.querySelectorAll('.reveal');
-    
-    const revealObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('active');
-                observer.unobserve(entry.target); // Only animate once
-            }
-        });
-    }, {
-        root: null,
-        threshold: 0.15,
-        rootMargin: "0px"
-    });
+    // 4. card Tilt Effect
 
-    revealElements.forEach(el => revealObserver.observe(el));
-    
-    // Project Filtering Logic
-    const filterBtns = document.querySelectorAll('.filter-btn');
-    const projectCards = document.querySelectorAll('.project-card');
-
-    filterBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            // Remove active class from all buttons
-            filterBtns.forEach(b => b.classList.remove('active'));
-            // Add active class to clicked button
-            btn.classList.add('active');
-
-            const filterValue = btn.getAttribute('data-filter');
-
-            projectCards.forEach(card => {
-                if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
-                    card.style.display = 'flex';
-                    setTimeout(() => {
-                        card.style.opacity = '1';
-                        card.style.transform = 'scale(1)';
-                    }, 50);
-                } else {
-                    card.style.opacity = '0';
-                    card.style.transform = 'scale(0.95)';
-                    setTimeout(() => {
-                        card.style.display = 'none';
-                    }, 300); // Matches transition time
-                }
-            });
-        });
-    });
-
-    // Spotlight Hover Effect for Cards
-    const projectsGrid = document.querySelector('.projects-grid');
-    if (projectsGrid) {
-        projectsGrid.addEventListener("mousemove", e => {
-            for(const card of projectCards) {
-                const rect = card.getBoundingClientRect(),
-                      x = e.clientX - rect.left,
-                      y = e.clientY - rect.top;
-
-                card.style.setProperty("--mouse-x", `${x}px`);
-                card.style.setProperty("--mouse-y", `${y}px`);
-            }
-        });
-    }
-
-    // Cursor Glow Logic
-    const cursorGlow = document.getElementById('cursor-glow');
-    if (cursorGlow) {
-        document.addEventListener('mousemove', (e) => {
-            // Animate using Web Animations API or direct styling
-            cursorGlow.animate({
-                left: `${e.clientX}px`,
-                top: `${e.clientY}px`
-            }, { duration: 3000, fill: "forwards", easing: "ease" });
+    const cards = document.querySelectorAll('.bento-card, .project-card');
+    cards.forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
             
-            // To make the glow perfectly center on the mouse pointer,
-            // we use transform translate(-50%, -50%) applied dynamically:
-            cursorGlow.style.transform = `translate(-50%, -50%)`;
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            
+            const rotateX = (y - centerY) / 10;
+            const rotateY = (centerX - x) / 10;
+            
+            card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-5px)`;
+        });
+        
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)';
+        });
+    });
+
+    // 5. Smooth Reveal on Scroll
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealOnScroll = () => {
+        const triggerBottom = window.innerHeight * 0.9;
+        revealElements.forEach(el => {
+            const elTop = el.getBoundingClientRect().top;
+            if (elTop < triggerBottom) {
+                el.classList.add('active');
+            }
         });
     }
-
+    
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll(); // Trigger once on load
 });
+
+

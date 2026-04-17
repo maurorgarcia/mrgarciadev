@@ -1,341 +1,345 @@
 <!DOCTYPE html>
-<html lang="es" class="dark">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mauro Raúl García - Full Stack Developer especializado en interfaces modernas, escalabilidad backend y automatización.">
-    
-    <!-- Open Graph / Redes Sociales -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Mauro Raúl García | Full Stack Developer">
-    <meta property="og:description" content="Especializado en interfaces modernas, escalabilidad backend y automatización. Explora mi portafolio.">
-    <meta property="og:image" content="https://mrgarciadev.vercel.app/images/dashboard.png">
-    
+    <meta name="description" content="Mauro Raúl García - Full Stack Developer en búsqueda de primera oportunidad IT. Especializado en React, Node.js y .NET.">
     <title>Mauro Raúl García | Full Stack Developer</title>
     
-    <!-- Google Fonts: Inter -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Abstract Premium Background -->
+
+    <!-- Barra de progreso de lectura -->
+    <div class="scroll-progress" id="progress-bar"></div>
+
+    <!-- El resplandor de fondo sutil -->
     <div class="mesh-gradient"></div>
-    <div class="cursor-glow" id="cursor-glow"></div>
 
-    <!-- Scroll Progress -->
-    <div class="scroll-progress" id="scroll-progress"></div>
-
-    <!-- Navigation -->
-    <header class="navbar" id="navbar">
+    <!-- Barra de Navegación -->
+    <nav class="navbar" id="navbar">
         <div class="container nav-container">
-            <a href="#hero" class="logo"><span class="logo-bracket">&lt;</span>mrgdev<span class="logo-bracket">/&gt;</span></a>
-            <nav class="nav-links">
-                <a href="#about" class="nav-link">Sobre Mí</a>
-                <a href="#experience" class="nav-link">Experiencia</a>
-                <a href="#projects" class="nav-link">Proyectos</a>
-                <a href="#contact" class="btn btn-outline btn-sm">Contacto</a>
-            </nav>
-            <button class="mobile-menu-btn" aria-label="Abrir menú">
+            <a href="#" class="logo">MG.</a>
+            <div class="nav-links" id="nav-links">
+                <a href="#sobre-mi" class="nav-link">Sobre Mí</a>
+                <a href="#experiencia" class="nav-link">Experiencia</a>
+                <a href="#habilidades" class="nav-link">Habilidades</a>
+                <a href="#proyectos" class="nav-link">Proyectos</a>
+                <a href="https://github.com/maurorgarcia" target="_blank" class="nav-link">GitHub</a>
+                <a href="https://www.linkedin.com/in/maurorgarcia" target="_blank" class="btn-sm">LinkedIn</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobile-btn">
                 <span></span><span></span><span></span>
             </button>
         </div>
+    </nav>
+
+    <!-- Hero / Inicio -->
+    <header class="hero" id="inicio">
+        <div class="container hero-container">
+            <div class="status-badge">
+                <span class="status-dot"></span>
+                Disponible para nuevos desafíos IT
+            </div>
+            <h1 class="hero-title">Construyendo el <span class="gradient-text">Futuro del Software.</span></h1>
+            <p class="hero-description">
+                Soy <strong>Mauro Raúl García</strong>, un desarrollador <strong>Full Stack</strong> apasionado por crear aplicaciones robustas, escalables y performantes. Especializado en el ecosistema de <strong>JavaScript (MERN)</strong> y el poder de <strong>.NET</strong>.
+            </p>
+            <div class="hero-actions">
+                <a href="#proyectos" class="btn btn-primary">Explorar Proyectos</a>
+                <a href="mailto:maurogarcia20178@gmail.com" class="btn btn-secondary">Contactar</a>
+                <a href="2026-CV-MAUROGARCIA-DEV.pdf" download class="btn btn-outline">Descargar CV</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">Full</span>
+                    <span class="stat-label">Stack Expertise</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">End</span>
+                    <span class="stat-label">to End Solutions</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Compromiso Técnico</span>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="hero" class="hero section">
-            <div class="container">
-                <div class="hero-content reveal">
-                    <div class="status-badge">
-                        <span class="status-dot"></span>
-                        Disponible para nuevos desafíos IT
+    <!-- Sobre Mí - Nuevo Diseño Premium -->
+    <section class="section section-alt" id="sobre-mi">
+        <div class="container reveal">
+            <div class="section-header text-center">
+                <span class="eyebrow">Mi Perfil</span>
+                <h2 class="section-title">Tecnología con propósito</h2>
+            </div>
+            
+            <div class="about-bento">
+                <!-- Card 1: Versatilidad Técnica -->
+                <div class="bento-card bento-large">
+                    <div class="bento-glow blue"></div>
+                    <div class="bento-content">
+                        <span class="bento-tag">Full Stack</span>
+                        <h3>Arquitecturas Híbridas</h3>
+                        <p>Me especializo en unir lo mejor de dos mundos: la agilidad y dinamismo de <strong>React y Node.js</strong> con la robustez y tipado fuerte de <strong>.NET Core</strong>. Mi objetivo es construir software que no solo funcione, sino que sea fácil de mantener y escalar a largo plazo.</p>
                     </div>
-                    <h1 class="hero-title">
-                        Mauro Raúl García <br>
-                        <span class="text-accent gradient-text">Full Stack Developer.</span>
-                    </h1>
-                    <p class="hero-description">
-                        Especializado en la creación de interfaces modernas, dinámicas y centradas en la experiencia del usuario. Experto en React, Node.js y .NET, enfocado en escribir código limpio y orientado a la resolución de problemas.
-                    </p>
-                    <div class="hero-actions">
-                        <a href="#projects" class="btn btn-primary">Explorar Proyectos</a>
-                        <a href="https://www.linkedin.com/in/maurorgarcia" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">LinkedIn →</a>
-                        <a href="2026-CV-MAUROGARCIA-DEV.pdf" target="_blank" class="btn btn-outline" download>Descargar CV 📄</a>
+                </div>
+
+                <!-- Card 2: Mentalidad Resolutiva -->
+                <div class="bento-card bento-medium">
+                    <div class="bento-glow gold"></div>
+                    <div class="bento-content">
+                        <div class="big-stat">Agile</div>
+                        <h3>Estrategia y Ejecución</h3>
+                        <p>Abordo cada proyecto con una mentalidad de resolución de problemas. Desde el diseño de la base de datos hasta la experiencia de usuario final, busco la <strong>eficiencia extrema</strong> en cada capa de la aplicación.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3: Formación Continua -->
+                <div class="bento-card bento-small">
+                    <div class="bento-content">
+                        <h3>Educación Continua</h3>
+                        <p>Formación técnica en la <strong>UTN</strong> potenciada por la especialización moderna de <strong>Coderhouse</strong>.</p>
+                    </div>
+                </div>
+
+                <!-- Card 4: Colaboración -->
+                <div class="bento-card bento-small">
+                    <div class="bento-content">
+                        <h3>Team Player</h3>
+                        <p>Experiencia trabajando en entornos dinámicos, coordinando equipos y comunicando ideas técnicas con claridad.</p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Professional Resume Structure: Experience & Education -->
-        <section id="experience" class="resume-section section">
-            <div class="container">
-                <div class="resume-grid">
-                    <!-- Column 1: Experience -->
-                    <div class="resume-column reveal">
-                        <div class="section-header">
-                            <span class="eyebrow">Trayectoria</span>
-                            <h2 class="section-title">Experiencia Laboral</h2>
-                        </div>
-                        <div class="timeline">
-                            <div class="timeline-item">
-                                <span class="timeline-date">Marzo 2025 — Actualidad</span>
-                                <h3 class="timeline-role">Administración - Recursos Humanos</h3>
-                                <h4 class="timeline-company">SJG MONTAJES INDUSTRIALES SRL</h4>
-                                <p class="timeline-desc">Gestión integral de asistencia in-situ. Logré reducir drásticamente los errores de fichaje mediante nuevas automatizaciones de control en planta, impactando de forma directa en la eficacia operativa y optimizando los tiempos del departamento de RRHH.</p>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Column 2: Education -->
-                    <div class="resume-column reveal">
-                        <div class="section-header">
-                            <span class="eyebrow">Educación</span>
-                            <h2 class="section-title">Formación Académica</h2>
-                        </div>
-                        <div class="timeline">
-                            <div class="timeline-item">
-                                <span class="timeline-date">2025 — Actualmente</span>
-                                <h3 class="timeline-role">Diplomatura Full Stack Web Development</h3>
-                                <h4 class="timeline-company">Coderhouse</h4>
-                                <p class="timeline-desc">Desarrollo integral de software bajo metodologías ágiles (Scrum). Lideré la implementación de arquitecturas escalables usando React, Next.js y Node.js, garantizando sistemas seguros de autenticación (JWT) y APIs REST de alto rendimiento.</p>
-                            </div>
-                            <div class="timeline-item">
-                                <span class="timeline-date">2023 — 2025</span>
-                                <h3 class="timeline-role">Tecnicatura Universitaria en Programación</h3>
-                                <h4 class="timeline-company">Universidad Tecnológica Nacional</h4>
-                                <p class="timeline-desc">Formación intensiva en ingeniería de software y algoritmia. Modelado de bases de datos relacionales orientadas al rendimiento y desarrollo backend sólido utilizando C# y el framework .NET Core para despliegues empresariales.</p>
+
+    <!-- Experiencia y Educación -->
+    <section class="section" id="experiencia">
+        <div class="container">
+            <div class="section-grid">
+                <!-- Columna Experiencia -->
+                <div class="column reveal">
+                    <span class="eyebrow">Trayectoria</span>
+                    <h2 class="section-title">Experiencia Laboral</h2>
+                    
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <span class="date">Marzo 2025 — Actualidad</span>
+                            <h3>Administración y RRHH</h3>
+                            <h4>SJG Montajes Industriales SRL</h4>
+                            <p>Gestión integral de asistencia para 50+ operarios en planta industrial. <strong>Logro clave:</strong> Automatización de procesos de fichaje que redujo errores en un 40% y ahorró 10hs semanales de trabajo manual.</p>
+                            <div class="achievement-tags">
+                                <span>Automatización</span>
+                                <span>SQL Server</span>
+                                <span>Optimización</span>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- Skills Matrix (Bento Grid) -->
-        <section id="skills" class="skills-section section">
-            <div class="container reveal">
-                <div class="section-header text-center">
-                    <span class="eyebrow">Competencias</span>
-                    <h2 class="section-title">Matriz Tecnológica</h2>
-                </div>
-                
-                <div class="bento-skills">
-                    <div class="bento-box glow-card">
-                        <div class="bento-icon">💻</div>
-                        <h3>Lenguajes & Frontend</h3>
-                        <p>Dominio en la construcción de interfaces escalables e interactivas.</p>
-                        <div class="tags-container">
-                            <span class="tag tag-blue">JavaScript</span>
-                            <span class="tag tag-blue">C#</span>
-                            <span class="tag tag-blue">HTML/CSS</span>
-                            <span class="tag tag-solid">React</span>
-                            <span class="tag tag-solid">Next.js</span>
-                            <span class="tag tag-outline">UI/UX</span>
+                <!-- Columna Educación -->
+                <div class="column reveal">
+                    <span class="eyebrow">Formación</span>
+                    <h2 class="section-title">Educación IT</h2>
+                    
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <span class="date">2025 — Actualmente</span>
+                            <h3>Diplomatura Full Stack</h3>
+                            <h4>Coderhouse</h4>
+                            <p>Desarrollo integral con metodologías ágiles (Scrum). Stack: React, Next.js, Node.js, Express, MongoDB.</p>
                         </div>
-                    </div>
-
-                    <div class="bento-box glow-card">
-                        <div class="bento-icon">⚙️</div>
-                        <h3>Backend & Arquitectura</h3>
-                        <p>Desarrollo de servicios robustos y sistemas distribuidos eficientes.</p>
-                        <div class="tags-container">
-                            <span class="tag tag-gold">Node.js</span>
-                            <span class="tag tag-gold">Express</span>
-                            <span class="tag tag-gold">ASP.NET</span>
-                            <span class="tag tag-outline">Entity Framework</span>
-                            <span class="tag tag-outline">APIs REST</span>
-                        </div>
-                    </div>
-
-                    <div class="bento-box glow-card span-half">
-                        <div class="bento-icon">🗄️</div>
-                        <h3>Bases de Datos</h3>
-                        <p>Modelado de datos y consultas complejas para alto rendimiento.</p>
-                        <div class="tags-container">
-                            <span class="tag tag-blue">SQL Server</span>
-                            <span class="tag tag-blue">SQL</span>
-                            <span class="tag tag-outline">Supabase</span>
-                        </div>
-                    </div>
-
-                    <div class="bento-box glow-card span-half">
-                        <div class="bento-icon">🛠️</div>
-                        <h3>Herramientas & Seguridad</h3>
-                        <p>Gestión de flujo de trabajo, autenticación y despliegue.</p>
-                        <div class="tags-container">
-                            <span class="tag tag-solid">Git</span>
-                            <span class="tag tag-solid">Postman</span>
-                            <span class="tag tag-outline">JWT</span>
-                            <span class="tag tag-outline">Cookies/Session</span>
-                            <span class="tag tag-blue">Scrum</span>
+                        <div class="timeline-item">
+                            <span class="date">2023 — 2025</span>
+                            <h3>Tecnicatura en Programación</h3>
+                            <h4>Univ. Tecnológica Nacional (UTN)</h4>
+                            <p>Ingeniería de software, algoritmos, estructuras de datos y backend con C# / .NET Core.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Projects Showcase (With Images) -->
-        <section id="projects" class="projects-section section">
-            <div class="container">
-                <div class="section-header text-center reveal">
-                    <span class="eyebrow">Portafolio</span>
-                    <h2 class="section-title">Proyectos Seleccionados</h2>
-                    <p class="text-muted" style="font-size: 0.85rem; margin-top: 1rem;">
-                        * La mayoría de estos proyectos son prototipos de investigación y pruebas técnicas personales. <br>
-                        <strong>SJG Omisiones</strong> es el único sistema actualmente en producción operativa diaria.
-                    </p>
+    <!-- Habilidades -->
+    <section class="section section-alt" id="habilidades">
+        <div class="container container-narrow reveal">
+            <div class="section-header text-center">
+                <span class="eyebrow">Mi Stack</span>
+                <h2 class="section-title">Tecnologías & Herramientas</h2>
+            </div>
+            
+            <div class="skills-matrix">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-tags">
+                        <span>React</span>
+                        <span>Next.js</span>
+                        <span>JavaScript (ES6+)</span>
+                        <span>TypeScript</span>
+                        <span>HTML5/CSS3</span>
+                        <span>Tailwind CSS</span>
+                        <span>UI/UX</span>
+                    </div>
                 </div>
-
-                <div class="projects-filter reveal">
-                    <button class="filter-btn active" data-filter="all">Todos</button>
-                    <button class="filter-btn" data-filter="fullstack">Sistemas Full Stack</button>
-                    <button class="filter-btn" data-filter="frontend">Web & Frontend</button>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skill-tags">
+                        <span>Node.js</span>
+                        <span>Express</span>
+                        <span>ASP.NET Core</span>
+                        <span>Entity Framework</span>
+                        <span>SQL Server</span>
+                        <span>MongoDB</span>
+                        <span>REST APIs</span>
+                    </div>
                 </div>
-
-                <div class="projects-grid">
-                    <!-- Project 1 -->
-                    <article class="project-card reveal" data-category="fullstack">
-                        <div class="project-image-wrapper">
-                            <img src="images/sjg-omisiones.vercel.app_login.png" alt="SJG Omisiones Interface" class="project-img" loading="lazy">
-                        </div>
-                        <div class="project-info">
-                            <div class="project-header">
-                                <h3 class="project-title">SJG Omisiones <span class="tag-status">OFICIAL</span></h3>
-                                <a href="https://sjg-omisiones.vercel.app/" target="_blank" rel="noopener" class="project-ext-link" aria-label="Ver proyecto SJG Omisiones">↗</a>
-                            </div>
-                            <p class="project-desc">Sistema de control de asistencia para operarios en planta Ternium. Permite auditar y corregir errores en fichajes, eliminando duplicidad de datos en tiempo real.</p>
-                            <div class="project-tags">
-                                <span class="tag">Next.js</span>
-                                <span class="tag">SQL</span>
-                                <span class="tag">Full Stack</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project 2 -->
-                    <article class="project-card reveal" data-category="fullstack">
-                        <div class="project-image-wrapper">
-                            <img src="images/gb-barberia.vercel.app_.png" alt="Turnera GB Barbería" class="project-img" loading="lazy">
-                        </div>
-                        <div class="project-info">
-                            <div class="project-header">
-                                <h3 class="project-title">Turnera GB Barbería</h3>
-                                <a href="https://gb-barberia.vercel.app/" target="_blank" rel="noopener" class="project-ext-link">↗</a>
-                            </div>
-                            <p class="project-desc">Plataforma de reservas online para negocios de estética. Incluye gestión de turnos automática, panel de administración para el dueño y base de datos en tiempo real.</p>
-                            <div class="project-tags">
-                                <span class="tag">Node.js</span>
-                                <span class="tag">Base de Datos</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project 3 -->
-                    <article class="project-card reveal" data-category="frontend">
-                        <div class="project-image-wrapper">
-                            <img src="images/websjg.vercel.app_.png" alt="Web SJG Montajes" class="project-img" loading="lazy">
-                        </div>
-                        <div class="project-info">
-                            <div class="project-header">
-                                <h3 class="project-title">Web SJG Montajes</h3>
-                                <a href="https://websjg.vercel.app/" target="_blank" rel="noopener" class="project-ext-link">↗</a>
-                            </div>
-                            <p class="project-desc">Sitio institucional corporativo diseñado con un enfoque en SEO técnico y rendimiento óptimo para facilitar la captación de clientes B2B en el sector industrial.</p>
-                            <div class="project-tags">
-                                <span class="tag">Frontend</span>
-                                <span class="tag">Corp B2B</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project 4 -->
-                    <article class="project-card reveal" data-category="frontend">
-                        <div class="project-image-wrapper">
-                            <img src="images/marcelo-s-choripan-hub.vercel.app_.png" alt="Marcelo's Choripán Hub" class="project-img" loading="lazy">
-                        </div>
-                        <div class="project-info">
-                            <div class="project-header">
-                                <h3 class="project-title">Marcelo's Choripán</h3>
-                                <a href="https://marcelo-s-choripan-hub.vercel.app/" target="_blank" rel="noopener" class="project-ext-link">↗</a>
-                            </div>
-                            <p class="project-desc">E-commerce gastronómico interactivo. Cuenta con un proceso de compra simplificado y micro-interacciones que mejoran la retención del usuario.</p>
-                            <div class="project-tags">
-                                <span class="tag">E-commerce</span>
-                                <span class="tag">UX</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project 5 -->
-                    <article class="project-card reveal" data-category="frontend">
-                        <div class="project-image-wrapper">
-                            <img src="images/portfolio-ia-taupe.vercel.app_.png" alt="Agencia IA" class="project-img" loading="lazy">
-                        </div>
-                        <div class="project-info">
-                            <div class="project-header">
-                                <h3 class="project-title">Agencia IA Portfolio</h3>
-                                <a href="https://portfolio-ia-taupe.vercel.app/" target="_blank" rel="noopener" class="project-ext-link">↗</a>
-                            </div>
-                            <p class="project-desc">Landing page de alto impacto visual para consultoría tecnológica. Implementa una estética futurista y componentes dinámicos para presentar servicios AI.</p>
-                            <div class="project-tags">
-                                <span class="tag">UI/UX</span>
-                                <span class="tag">Animaciones</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project 6 -->
-                    <article class="project-card reveal" data-category="frontend">
-                        <div class="project-image-wrapper">
-                            <img src="images/mauro-theta.vercel.app_.png" alt="iPhoneTechno LB" class="project-img" loading="lazy">
-                        </div>
-                        <div class="project-info">
-                            <div class="project-header">
-                                <h3 class="project-title">iPhoneTechno LB</h3>
-                                <a href="https://mauro-theta.vercel.app/" target="_blank" rel="noopener" class="project-ext-link">↗</a>
-                            </div>
-                            <p class="project-desc">Catálogo digital premium especializado en productos Apple. Interfaz minimalista orientada a destacar la calidad de los dispositivos e incentivar el contacto.</p>
-                            <div class="project-tags">
-                                <span class="tag">Frontend</span>
-                                <span class="tag">Catálogo</span>
-                            </div>
-                        </div>
-                    </article>
+                <div class="skill-category">
+                    <h3>DevOps & Otros</h3>
+                    <div class="skill-tags">
+                        <span>Git/GitHub</span>
+                        <span>Vercel</span>
+                        <span>Postman</span>
+                        <span>JWT Auth</span>
+                        <span>Supabase</span>
+                        <span>Scrum/Agile</span>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- CTA / Contact -->
-        <section id="contact" class="cta-section section">
-            <div class="container">
-                <div class="cta-box reveal glow-card">
-                    <h2>¿Listo para construir el próximo proyecto?</h2>
-                    <p class="text-body">Disponible para desarrollo corporativo, aplicaciones a medida y automatizaciones eficientes.</p>
-                    <a href="mailto:maurogarcia20178@gmail.com" class="btn btn-primary btn-lg">Contactar vía Email</a>
-                </div>
+    <!-- Proyectos -->
+    <section class="section" id="proyectos">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="eyebrow">Portafolio</span>
+                <h2 class="section-title">Proyectos Seleccionados</h2>
+                <p class="section-disclaimer">* Todos los proyectos incluyen código fuente en <a href="https://github.com/maurorgarcia" target="_blank">GitHub</a> y están deployados en producción.</p>
             </div>
-        </section>
-    </main>
+
+            <div class="projects-grid">
+                <!-- SJG Omisiones -->
+                <article class="project-card reveal featured">
+                    <div class="project-badge">PROYECTO DESTACADO</div>
+                    <div class="project-image">
+                        <img src="images/sjg-omisiones.vercel.app_login.png" alt="SJG Omisiones Dashboard">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-top">
+                            <h3>SJG Omisiones <span class="badge-status">EN PRODUCCIÓN</span></h3>
+                            <div class="project-links">
+                                <a href="https://github.com/maurorgarcia/sjg-omisiones" target="_blank" class="link-icon" title="Ver código">💻</a>
+                                <a href="https://sjg-omisiones.vercel.app/" target="_blank" class="link-icon" title="Ver demo">↗</a>
+                            </div>
+                        </div>
+                        <p class="project-problem"><strong>Problema:</strong> Errores manuales en fichajes de 50+ operarios causaban conflictos de pago.</p>
+                        <p class="project-solution"><strong>Solución:</strong> Dashboard en tiempo real para auditoría y corrección de asistencias con alertas automáticas.</p>
+                        <div class="project-impact">
+                            <span>📉 40% menos errores</span>
+                            <span>⏱️ 10hs ahorradas/semana</span>
+                        </div>
+                        <div class="project-tags">
+                            <span>Next.js</span>
+                            <span>SQL Server</span>
+                            <span>React Query</span>
+                            <span>Dashboard</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Turnera -->
+                <article class="project-card reveal">
+                    <div class="project-image">
+                        <img src="images/gb-barberia.vercel.app_.png" alt="Turnera Barberia">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-top">
+                            <h3>Turnera GB Barbería</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/maurorgarcia/turnera-barberia" target="_blank" class="link-icon" title="Ver código">💻</a>
+                                <a href="https://gb-barberia.vercel.app/" target="_blank" class="link-icon" title="Ver demo">↗</a>
+                            </div>
+                        </div>
+                        <p class="project-problem"><strong>Problema:</strong> Gestión manual de turnos generaba sobrecarga administrativa y pérdida de clientes.</p>
+                        <p class="project-solution"><strong>Solución:</strong> Sistema de reservas online con panel admin, notificaciones y gestión de servicios.</p>
+                        <div class="project-tags">
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>MongoDB</span>
+                            <span>JWT Auth</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Web SJG -->
+                <article class="project-card reveal">
+                    <div class="project-image">
+                        <img src="images/websjg.vercel.app_.png" alt="Sitio SJG Montajes">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-top">
+                            <h3>Web SJG Montajes</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/maurorgarcia/web-sjg" target="_blank" class="link-icon" title="Ver código">💻</a>
+                                <a href="https://websjg.vercel.app/" target="_blank" class="link-icon" title="Ver demo">↗</a>
+                            </div>
+                        </div>
+                        <p class="project-problem"><strong>Problema:</strong> Empresa sin presencia digital para captación de clientes B2B.</p>
+                        <p class="project-solution"><strong>Solución:</strong> Landing corporativa con SEO optimizado, formulario de contacto y diseño responsive.</p>
+                        <div class="project-tags">
+                            <span>Next.js</span>
+                            <span>SEO</span>
+                            <span>Responsive</span>
+                            <span>Performance</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto CTA -->
+    <section class="section section-cta">
+        <div class="container text-center reveal">
+            <span class="eyebrow">¿Interesado en mi perfil?</span>
+            <h2 class="section-title">Estoy listo para sumarme a tu equipo</h2>
+            <p class="cta-description">Busco mi primera oportunidad como desarrollador Junior o Trainee. Estoy abierto a modalidad remota o presencial en Buenos Aires.</p>
+            <div class="cta-actions">
+                <a href="mailto:maurogarcia20178@gmail.com" class="btn btn-primary btn-lg">Enviar Email</a>
+                <a href="https://www.linkedin.com/in/maurorgarcia" target="_blank" class="btn btn-secondary btn-lg">LinkedIn</a>
+                <a href="https://github.com/maurorgarcia" target="_blank" class="btn btn-outline btn-lg">GitHub</a>
+            </div>
+            <div class="contact-info">
+                <p>📍 San Nicolás de los Arroyos, Buenos Aires, Argentina</p>
+                <p>💼 Disponibilidad: Full-time | Remoto/Híbrido/Presencial</p>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container footer-content">
-            <div class="footer-brand">
-                <span class="logo"><span class="logo-bracket">&lt;</span>mrgdev<span class="logo-bracket">/&gt;</span></span>
-                <p class="footer-copy">&copy; 2026 Mauro Raúl García. Todos los derechos reservados.</p>
+        <div class="container footer-content text-center">
+            <div class="footer-social">
+                <a href="https://github.com/maurorgarcia" target="_blank" class="social-link">GitHub</a>
+                <a href="https://www.linkedin.com/in/maurorgarcia" target="_blank" class="social-link">LinkedIn</a>
+                <a href="mailto:maurogarcia20178@gmail.com" class="social-link">Email</a>
             </div>
-            <div class="footer-socials">
-                <a href="https://www.linkedin.com/in/maurorgarcia" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
-                <a href="https://github.com/maurorgarcia" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mauro Raúl García. Desarrollado con ❤️ y mucho café.</p>
             </div>
         </div>
     </footer>
 
-    <!-- JS -->
     <script src="main.js"></script>
 </body>
 </html>
